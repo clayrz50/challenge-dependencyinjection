@@ -22,13 +22,13 @@ public class ChallengeApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("===== Enter =======");
+		System.out.println("===== Input =======");
 		int cod=sc.nextInt();
 		double basic=sc.nextDouble();
 		double discount=sc.nextDouble();
 		
 		Order order=new Order(cod,basic,discount);
-		System.out.println("===== Out =======");
+		System.out.println("===== Output =======");
 		System.out.println("Pedido código "+order.getCode());
 		System.out.println("Valor total: "+orderService.total(order));
 		
